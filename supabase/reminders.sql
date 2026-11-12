@@ -10,6 +10,7 @@
 
 create extension if not exists pg_cron;
 create extension if not exists pg_net;
+create extension if not exists supabase_vault with schema vault;
 
 create table if not exists public.reminder_email_log (
   id bigint generated always as identity primary key,
